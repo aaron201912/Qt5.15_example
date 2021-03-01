@@ -9,7 +9,7 @@ qt_test.tar.gz	  - Qt样例程序运行环境
 
 ## 构建过程  
 ### 环境准备
-Qt5下载地址：<http://download.qt.io/>
+Qt5下载地址：<http://download.qt.io/>  
 ![avatar](md_res/1.png)
 
 ### 目录结构说明
@@ -95,3 +95,28 @@ vim /etc/profile 添加toolchain路径：
   -I /home/koda.xu/Qt/tslib_1.21/arm_tslib/include \
   -L /home/koda.xu/Qt/tslib_1.21/arm_tslib/lib
 ```
+
+-prefix 设置部署路径
+-I XXX  设置引用头文件路径
+-I XXX	设置链接库路径
+
+### 编译
+**make –j4**  
+**make install**  
+
+### 导出环境变量
+**vim ~/.bashrc** 
+**export PATH=/home/koda.xu/workspace/Qt5.15.0/qt5.15.0_lib/bin:$PATH**
+
+## Qt example
+ftp /SSD20X/Demo_Release/UI_DEMO/Qt5.15.0 目录下有qt example，以HelloWorld为例，编译Qt app方法如下：  
+进入HelloWorld目录，执行qmake -project，生成.pro文件。  
+**编辑.pro文件**    
+![avatar](md_res/3.png)
+**qmake**   
+**make** 
+在HelloWorld目录生成HelloWorld bin档  
+**初始化disp&panel**  
+运行demo前需要先初始化disp和panel，见dispInit，在该目录执行make生成档。  
+**运行qt app**  
+可参考HelloWorld/run.sh
