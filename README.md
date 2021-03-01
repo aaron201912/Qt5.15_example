@@ -10,7 +10,7 @@ qt_test.tar.gz	  - Qt样例程序运行环境
 ## 构建过程  
 ### 环境准备
 Qt5下载地址：<http://download.qt.io/>  
-![avatar](https://github.com/aaron201912/Qt5.15_example/blob/master/md_res/1.png)
+![avatar](https://github.com/aaron201912/Qt5.15_example/raw/master/md_res/1.png)
 
 ### 目录结构说明
 | 目录 | 说明 |  
@@ -63,7 +63,7 @@ vim /etc/profile 添加toolchain路径：
 **cd qt-everywhere-src-5.15.0**  
 **vi qtbase/mkspecs/linux-arm-gnueabi-g++/qmake.conf**  
 修改如下：  
-![avatar](https://github.com/aaron201912/Qt5.15_example/blob/master/md_res/2.png)  
+![avatar](https://github.com/aaron201912/Qt5.15_example/raw/master/md_res/2.png)  
 
 ### 设置configure
 ```
@@ -112,7 +112,7 @@ vim /etc/profile 添加toolchain路径：
 ftp /SSD20X/Demo_Release/UI_DEMO/Qt5.15.0 目录下有qt example，以HelloWorld为例，编译Qt app方法如下：  
 进入HelloWorld目录，执行qmake -project，生成.pro文件。  
 **1. 编辑.pro文件**    
-![avatar](https://github.com/aaron201912/Qt5.15_example/blob/master/md_res/3.png)  
+![avatar](https://github.com/aaron201912/Qt5.15_example/raw/master/md_res/3.png)  
 
 **2. qmake**     
 
