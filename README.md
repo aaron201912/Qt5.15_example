@@ -7,7 +7,7 @@ examples.tar.gz   - Qt样例程序
 dispInit.tar.gz	  - 初始化disp和panel样例程序
 qt_test.tar.gz	  - Qt样例程序运行环境
 
-##构建过程
+##构建过程  
 ###环境准备
 Qt5下载地址：<http://download.qt.io/>
 
