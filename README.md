@@ -28,8 +28,15 @@ Qt5下载地址：<http://download.qt.io/>
 
 ## Qt5交叉编译
 本例使用toolchain: gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf编译qt5。编译依赖perl5.8或以上版本，python2.7或以上版本。要支持使用触摸还需要链接tslib库。  
-下载toolchain gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf.tar.xz：  
+### 下载toolchain gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf.tar.xz：  
 <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads>  
 
 ### 设置环境变量：  
-vim /etc/profile 添加toolchain路径：**export PATH=/opt/toolchain/gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf/bin:$PATH**
+vim /etc/profile 添加toolchain路径：  
+**export PATH=/opt/toolchain/gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf/bin:$PATH**
+
+### 安装perl，python：
+**sudo apt-get install perl Python2.7**
+
+### 安装git工具：
+**sudo apt-get install git**
