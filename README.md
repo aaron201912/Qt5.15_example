@@ -1,11 +1,11 @@
 # Qt5.15_example
 Qt5.15 examples for testing.
 
-##本环境基于Qt5.15.0构建，分为以下部分。
-qt5.15_lib.tar.gz - Qt5.15.0交叉编译生成库
-examples.tar.gz   - Qt样例程序
-dispInit.tar.gz	  - 初始化disp和panel样例程序
-qt_test.tar.gz	  - Qt样例程序运行环境
+## 本环境基于Qt5.15.0构建，分为以下部分。
+qt5.15_lib.tar.gz - Qt5.15.0交叉编译生成库  
+examples.tar.gz   - Qt样例程序  
+dispInit.tar.gz	  - 初始化disp和panel样例程序  
+qt_test.tar.gz	  - Qt样例程序运行环境  
 
 ## 构建过程  
 ### 环境准备
