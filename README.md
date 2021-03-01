@@ -112,11 +112,11 @@ vim /etc/profile 添加toolchain路径：
 ftp /SSD20X/Demo_Release/UI_DEMO/Qt5.15.0 目录下有qt example，以HelloWorld为例，编译Qt app方法如下：  
 进入HelloWorld目录，执行qmake -project，生成.pro文件。  
 **编辑.pro文件**    
-![avatar](md_res/3.png)
-**qmake**   
-**make** 
-在HelloWorld目录生成HelloWorld bin档  
-**初始化disp&panel**  
-运行demo前需要先初始化disp和panel，见dispInit，在该目录执行make生成档。  
-**运行qt app**  
-可参考HelloWorld/run.sh
+![avatar](md_res/3.png)  
+**qmake**     
+**make**  
+在HelloWorld目录生成HelloWorld bin档   
+**初始化disp&panel**   
+运行demo前需要先初始化disp和panel，见dispInit，在该目录执行make生成档。   
+**运行qt app**   
+可参考HelloWorld/run.sh  
