@@ -13,7 +13,7 @@ Qt5下载地址：<http://download.qt.io/>
 
 ### 目录结构说明
 | 目录 | 说明 |  
-| ：---- | ：---- |  
+| :---- | :---- |  
 | archive | 各种Qt开发工具安装包，包含新旧版本，可以下载开发工具和源码 |  
 | community_releases | 社区定制的Qt库，Tizen版Qt以及Qt附加源码包 |
 | development_releases | 开发版，包含新的和旧的不稳定版本，在Qt开发过程中的非正式版本 |
