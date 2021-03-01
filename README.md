@@ -10,6 +10,7 @@ qt_test.tar.gz	  - Qt样例程序运行环境
 ## 构建过程  
 ### 环境准备
 Qt5下载地址：<http://download.qt.io/>
+![avatar](md_res/1.png)
 
 ### 目录结构说明
 | 目录 | 说明 |  
@@ -45,7 +46,7 @@ vim /etc/profile 添加toolchain路径：
 **git clone https://github.com/libts/tslib.git**
 
 ### 编译tslib：
-**sudo apt-get install automake**  
+**sudo apt-get install automake**    
 **sudo apt-get install autogen**  
 **sudo apt-get install libtool**  
 **./autogen.sh**  
@@ -57,8 +58,37 @@ vim /etc/profile 添加toolchain路径：
 
 ### 编译Qt5：
 下载Qt5.15.0 opensource code包 qt-everywhere-src-5.15.0.tar.xz
-**xz –d qt-everywhere-src-5.15.0.tar.xz**
-**tar xf qt-everywhere-src-5.15.0.tar**
-**cd qt-everywhere-src-5.15.0**
-**vi qtbase/mkspecs/linux-arm-gnueabi-g++/qmake.conf**
-修改如下：
+**xz –d qt-everywhere-src-5.15.0.tar.xz**  
+**tar xf qt-everywhere-src-5.15.0.tar**  
+**cd qt-everywhere-src-5.15.0**  
+**vi qtbase/mkspecs/linux-arm-gnueabi-g++/qmake.conf**  
+修改如下：  
+![avatar](md_res/2.png)  
+
+### 设置configure
+``
+./configure \
+		-prefix /home/koda.xu/Qt/Qt5.15.0/qt5.15_lib \
+		-static \
+		-release \
+		-opensource \
+		-make libs \
+		-xplatform linux-arm-gnueabi-g++ \
+		-optimized-qmake -pch \
+		-qt-libjpeg \
+		-qt-libpng \
+		-qt-zlib \
+		-no-opengl \
+		-skip qt3d \
+		-skip qtcanvas3d \
+		-skip qtpurchasing \
+		-skip qtlocation \
+		-skip qttools \
+		-no-sse2 \
+		-no-openssl \
+		-no-cups \
+		-no-glib \
+		-no-iconv \
+		-nomake examples \
+
+``
