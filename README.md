@@ -67,27 +67,31 @@ vim /etc/profile 添加toolchain路径：
 
 ### 设置configure
 ```
-./configure \
--prefix /home/koda.xu/Qt/Qt5.15.0/qt5.15_lib \
--static \
--release \
--opensource \
--make libs \
--xplatform linux-arm-gnueabi-g++ \
--optimized-qmake -pch \
--qt-libjpeg \
--qt-libpng \
--qt-zlib \
--no-opengl \
--skip qt3d \
--skip qtcanvas3d \
--skip qtpurchasing \
--skip qtlocation \
--skip qttools \
--no-sse2 \
--no-openssl \
--no-cups \
--no-glib \
--no-iconv \
--nomake examples \
+  ./configure \
+  -prefix /home/koda.xu/Qt/Qt5.15.0/qt5.15_lib \
+  -static \
+  -release \
+  -opensource \
+  -make libs \
+  -xplatform linux-arm-gnueabi-g++ \
+  -optimized-qmake -pch \
+  -qt-libjpeg \
+  -qt-libpng \
+  -qt-zlib \
+  -no-opengl \
+  -skip qt3d \
+  -skip qtcanvas3d \
+  -skip qtpurchasing \
+  -skip qtlocation \
+  -skip qttools \
+  -no-sse2 \
+  -no-openssl \
+  -no-cups \
+  -no-glib \
+  -no-iconv \
+  -nomake examples \
+  -tslib \
+  -linuxfb \
+  -I /home/koda.xu/Qt/tslib_1.21/arm_tslib/include \
+  -L /home/koda.xu/Qt/tslib_1.21/arm_tslib/lib
 ```
