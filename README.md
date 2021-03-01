@@ -113,11 +113,15 @@ ftp /SSD20X/Demo_Release/UI_DEMO/Qt5.15.0 目录下有qt example，以HelloWorld
 进入HelloWorld目录，执行qmake -project，生成.pro文件。  
 **1. 编辑.pro文件**    
 ![avatar](md_res/3.png)  
+
 **2. qmake**     
+
 **3. make**  
 在HelloWorld目录生成HelloWorld bin档   
+
 **4. 初始化disp&panel**   
 运行demo前需要先初始化disp和panel，见dispInit，在该目录执行make生成档。   
+
 **5. 运行qt app**   
 先运行dispInit初始化disp和panel，可参考dispInit/run.sh；  
 运行qt app，可参考HelloWorld/run.sh  
