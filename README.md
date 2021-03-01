@@ -40,3 +40,25 @@ vim /etc/profile 添加toolchain路径：
 
 ### 安装git工具：
 **sudo apt-get install git**
+
+### 下载tslib：
+**git clone https://github.com/libts/tslib.git**
+
+### 编译tslib：
+**sudo apt-get install automake**  
+**sudo apt-get install autogen**  
+**sudo apt-get install libtool**  
+**./autogen.sh**  
+**./configure --prefix=/home/koda.xu/workspace/tslib_1.21/arm_tslib --host=arm-linux ac_cv_func_malloc_0_nonnull=yes CC=arm-linux-gnueabihf-gcc**  
+**make –j4**  
+**make install**  
+
+--prefix为tslib导出的头文件和lib存放路径。
+
+### 编译Qt5：
+下载Qt5.15.0 opensource code包 qt-everywhere-src-5.15.0.tar.xz
+**xz –d qt-everywhere-src-5.15.0.tar.xz**
+**tar xf qt-everywhere-src-5.15.0.tar**
+**cd qt-everywhere-src-5.15.0**
+**vi qtbase/mkspecs/linux-arm-gnueabi-g++/qmake.conf**
+修改如下：
