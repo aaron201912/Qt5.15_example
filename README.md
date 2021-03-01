@@ -66,7 +66,7 @@ vim /etc/profile 添加toolchain路径：
 ![avatar](md_res/2.png)  
 
 ### 设置configure
-``
+```
 ./configure \
 		-prefix /home/koda.xu/Qt/Qt5.15.0/qt5.15_lib \
 		-static \
@@ -91,4 +91,4 @@ vim /etc/profile 添加toolchain路径：
 		-no-iconv \
 		-nomake examples \
 
-``
+```
