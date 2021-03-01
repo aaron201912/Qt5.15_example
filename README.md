@@ -10,7 +10,8 @@ qt_test.tar.gz	  - Qt样例程序运行环境
 ## 构建过程  
 ### 环境准备
 Qt5下载地址：<http://download.qt.io/>  
-![avatar](https://github.com/aaron201912/Qt5.15_example/blob/master/md_res/1.png?raw=true)
+![avatar](https://github.com/aaron201912/Qt5.15_example/blob/master/md_res/1.png?raw=true)  
+![avatar](https://www.runoob.com/wp-content/uploads/2019/03/23EACC50-38E0-4284-B99A-6BC22E284BAC.jpg)  
 
 ### 目录结构说明
 | 目录 | 说明 |  
