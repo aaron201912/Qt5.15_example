@@ -67,7 +67,7 @@ vim /etc/profile 添加toolchain路径：
 
 ### 设置configure
 ```
-  ./configure \
+./configure \
   -prefix /home/koda.xu/Qt/Qt5.15.0/qt5.15_lib \
   -static \
   -release \
