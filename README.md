@@ -7,11 +7,11 @@ examples.tar.gz   - Qt样例程序
 dispInit.tar.gz	  - 初始化disp和panel样例程序
 qt_test.tar.gz	  - Qt样例程序运行环境
 
-##构建过程  
-###环境准备
+## 构建过程  
+### 环境准备
 Qt5下载地址：<http://download.qt.io/>
 
-###目录结构说明
+### 目录结构说明
 | 目录 | 说明 |
 | ：---- | ：---- |
 | archive | 各种Qt开发工具安装包，包含新旧版本，可以下载开发工具和源码 |
